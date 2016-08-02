@@ -50,12 +50,12 @@ public class MainActivity extends AppCompatActivity {
         timer = new Runnable() {
             @Override
             public void run() {
-                selectImage(1);                         //繰り返し処理部分
+                selectImage(1);                   //繰り返し処理部分
                 handler.postDelayed(timer,2000);  //次回処理を２秒後にセット
             }
         };
         selectImage(1);
-        handler.postDelayed(timer,2000);           //初回実行処理
+        handler.postDelayed(timer,2000);          //初回実行処理
     }
 
     @Override
